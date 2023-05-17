@@ -1,0 +1,56 @@
+body {
+  margin: 0;
+}
+
+.app {
+  height: 500vh;
+}
+
+.sticky {
+  position: sticky;
+  top: 0px;
+  height: 100vh;
+}
+
+.frame {
+  z-index: 1;
+  position: relative;
+  height: 100%;
+  width: 100%;
+  top: 0px;
+}
+
+.image {
+  position: absolute;
+  top: 100px;
+  right: 150px;
+  /* Adjusted to position images on the right side */
+  width: 40%;
+  /* Adjusted width to cover a small square on the right side */
+  height: 600px;
+  /* Adjusted height to cover a small square on the right side */
+  opacity: 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  /* Added to center the background within the image container */
+}
+
+.image.image_0 {
+  z-index: 0;
+  background-image: url("../public/images/0.gif");
+}
+.image.image_1 {
+  z-index: 1;
+  background-image: url("../public/images/1.gif");
+}
+.image.image_2 {
+  z-index: 2;
+  background-image: url("../public/images/2.gif");
+}
+
+.image_visible {
+  opacity: 1;
+}
+
+/*# sourceMappingURL=index.css.map */
